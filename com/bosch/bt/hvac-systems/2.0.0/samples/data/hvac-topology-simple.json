@@ -1,0 +1,290 @@
+{
+    "digitalTwinsFileInfo": {
+        "fileVersion": "1.0.0"
+    },
+    "digitalTwinsGraph": {
+        "digitalTwins": [
+            {
+                "$dtId": "HVAC-ZONE-1",
+                "$etag": "W/\"80681962-0b45-456d-9ec4-64cd0411fe49\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:HVAC:Zone;2"
+                }
+            },
+            {
+                "$dtId": "ROOM-1",
+                "$etag": "W/\"a58acb9f-5165-4b05-bf11-169dc18f17b9\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Space;2"
+                }
+            },
+            {
+                "$dtId": "VAV-1",
+                "$etag": "W/\"b49182b8-df47-4c40-aca2-98a6aec4b881\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:HVAC:VariableAirVolume;2"
+                }
+            },
+            {
+                "$dtId": "AHU-1",
+                "$etag": "W/\"5bbfb5af-8955-4817-a8d2-b869e46fb99c\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit;2"
+                }
+            },
+            {
+                "$dtId": "VAV-1-Damper",
+                "$etag": "W/\"48265656-6533-4880-91dd-1c1fd385dce0\"",
+                "function": "Sensor",
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "VAV-1-Airflow",
+                "$etag": "W/\"7b172ac7-dc64-4380-bcbc-492f9b786efb\"",
+                "medium": "Air",
+                "function": "Sensor",
+                "type": "Flow",
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "AHU-1-Fan-Speed-Command",
+                "$etag": "W/\"e818ae5f-0f0c-4001-8c48-2a22f8a83f59\"",
+                "function": "Command",
+                "type": "Speed",
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "AHU-1-Fan-Status",
+                "$etag": "W/\"653b8503-0ba3-4536-adc2-825aad840049\"",
+                "function": "Command",
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:BinaryDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "CHWP-1",
+                "$etag": "W/\"b084a727-a2e0-4d72-9ea4-c15ba827b051\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:HVAC:ChilledWaterPlant;2"
+                }
+            },
+            {
+                "$dtId": "Floor-1",
+                "$etag": "W/\"0b4fca99-1b3c-42f9-9d91-113e0711d2c9\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Storey;2"
+                }
+            },
+            {
+                "$dtId": "Building-1",
+                "$etag": "W/\"f4622bc8-97e5-4ff0-b443-339d7864f924\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Building;2"
+                }
+            },
+            {
+                "$dtId": "CHWP-1-Outside-Air-Temp",
+                "$etag": "W/\"391806c1-15fa-4bb9-bd76-f6f53bc73a02\"",
+                "effectiveBounds": "Out",
+                "function": "Sensor",
+                "type": "Temperature",
+                "section": "Outside",
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "ROOM-2",
+                "$etag": "W/\"20112a5a-606c-4fde-9786-81aef7dbe313\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Space;2"
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "$relationshipId": "9e72be00-7133-44de-8aaf-93dc2dfbcc2d",
+                "$sourceId": "HVAC-ZONE-1",
+                "$targetId": "ROOM-1",
+                "$relationshipName": "ConsistsOf",
+                "$etag": "W/\"b3f435d8-4331-4b55-bfda-b559d8c9f771\""
+            },
+            {
+                "$relationshipId": "62e21478-a50c-4cf2-87cb-887d1b40dca7",
+                "$sourceId": "HVAC-ZONE-1",
+                "$targetId": "VAV-1",
+                "$relationshipName": "ServedBy",
+                "$etag": "W/\"5ea6c931-e2f1-4287-92bd-e1c6064959fd\""
+            },
+            {
+                "$relationshipId": "7a4f327a-ff44-4acb-aa20-941b73ab4fc2",
+                "$sourceId": "HVAC-ZONE-1",
+                "$targetId": "ROOM-2",
+                "$relationshipName": "ConsistsOf",
+                "$etag": "W/\"fc8ac498-8fb4-43e3-9917-4649becca345\""
+            },
+            {
+                "$relationshipId": "e42f417c-49cb-4508-ab9b-9bd7a9ca9e29",
+                "$sourceId": "ROOM-1",
+                "$targetId": "Floor-1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"2cee199c-bfbe-4dab-bf6c-c7ea56ff227e\""
+            },
+            {
+                "$relationshipId": "0452bc0f-28ba-4924-af63-13f2c452b117",
+                "$sourceId": "VAV-1-Damper",
+                "$targetId": "VAV-1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"302315ff-eea7-4630-8065-f5ad3c754752\""
+            },
+            {
+                "$relationshipId": "ac76e79a-0cae-4083-82a1-c1d1b59cc986",
+                "$sourceId": "AHU-1",
+                "$targetId": "CHWP-1",
+                "$relationshipName": "ThermalSource",
+                "$etag": "W/\"9808762b-2593-4be4-a47d-26af986cd526\""
+            },
+            {
+                "$relationshipId": "159554fd-c8bc-4786-818e-d8790c86d0af",
+                "$sourceId": "VAV-1",
+                "$targetId": "AHU-1",
+                "$relationshipName": "ThermalDistributor",
+                "$etag": "W/\"a6a25bd5-6275-4bf5-8c7a-0b1d2981b104\""
+            },
+            {
+                "$relationshipId": "890fe306-dcc2-4588-8e2c-4dcba85e5bb7",
+                "$sourceId": "AHU-1-Fan-Speed-Command",
+                "$targetId": "AHU-1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"41018398-f4da-49b1-b85b-a6f8da253486\""
+            },
+            {
+                "$relationshipId": "dfecdede-245a-451b-a3e3-7d23b3b2d56e",
+                "$sourceId": "AHU-1-Fan-Status",
+                "$targetId": "AHU-1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"7f7f75fc-e937-4f65-b337-bfe21b6a49bd\""
+            },
+            {
+                "$relationshipId": "6f4e33f9-70e4-4aed-b8d8-1d5ffee4e1e2",
+                "$sourceId": "Floor-1",
+                "$targetId": "Building-1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"baa490e2-1f35-476e-b536-ac2b6a74f90c\""
+            },
+            {
+                "$relationshipId": "0df94d05-e324-456b-9c5c-53e27073f500",
+                "$sourceId": "VAV-1-Airflow",
+                "$targetId": "VAV-1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"9c138c17-9362-4e7a-851e-82c6a0d323ec\""
+            },
+            {
+                "$relationshipId": "7bade0ba-74b8-4e46-bf29-18d07e8fe123",
+                "$sourceId": "CHWP-1-Outside-Air-Temp",
+                "$targetId": "CHWP-1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"b3ced2ea-7575-4bc6-b719-805a0e18cc33\""
+            },
+            {
+                "$relationshipId": "e17d44e9-19b1-4d86-8b70-e49b4af03419",
+                "$sourceId": "CHWP-1-Outside-Air-Temp",
+                "$targetId": "Building-1",
+                "$relationshipName": "observes",
+                "$etag": "W/\"a1bc05e3-4853-4627-853e-7cf239f97c21\""
+            },
+            {
+                "$relationshipId": "2bcd384e-d458-41c1-967b-a5d489ad0487",
+                "$sourceId": "ROOM-2",
+                "$targetId": "Floor-1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"40c3c500-6bb2-4bf3-a065-4b76632ffaf8\""
+            }
+        ]
+    },
+    "digitalTwinsModels": []
+}
