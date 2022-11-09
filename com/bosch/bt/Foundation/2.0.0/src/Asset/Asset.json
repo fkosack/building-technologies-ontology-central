@@ -64,6 +64,24 @@
         },
         {
             "@type": "Relationship",
+            "name": "feeds",
+            "displayName": "feeds",
+            "description": "The asset feeds a zone or another asset with some medium.",
+            "writable": true,
+            "target": [
+                "dtmi:com:bosch:bt:foundation:space:Zone;2",
+                "dtmi:com:bosch:bt:foundation:asset:Asset;2"
+            ],
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Relationship",
             "name": "includedIn",
             "displayName": "Included in",
             "description": "Included in a collection e.g. system collection.",
